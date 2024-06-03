@@ -7,22 +7,26 @@
 }
 
 html {
+  height: -webkit-fill-available;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
   padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   background-color: #34353b;
+  height: 100vh;
 }
 
 header {
   height: 100vh;
   padding: 36px 100px;
   background-image: url(asset/domp.png);
-  background-position: right;
+  background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
   width: 100vw;
@@ -69,8 +73,8 @@ header nav ul li .active {
 }
 
 header nav .search {
-  height: 48px;
-  width: 200px;
+  height: 48%;
+  width: 200%;
   background-color: #3d3e42;
   display: flex;
   align-items: center;
@@ -361,7 +365,7 @@ header nav .search i {
 .experience {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
+  height: 100vh;
   width: 100vw;
   position: relative;
   align-items: center;
@@ -387,7 +391,7 @@ header nav .search i {
 .lighter-div {
   background-color: #3d3e42;
   width: 100vw;
-  /* height: 90vh; */
+  height: 90vh;
   padding: 10vh;
   display: flex;
   flex-direction: column;
@@ -438,7 +442,7 @@ header nav .search i {
   margin: 10px 0;
 }
 
-.exp-desc p {
+.exp-desc ul {
   color: #fbfbfb;
   font-size: 16px;
   font-weight: 400;
